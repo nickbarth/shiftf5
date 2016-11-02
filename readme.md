@@ -9,7 +9,7 @@ npm install -g shiftf5
 cd /var/www/example.com && shiftf5
 ```
 
-Add this to your HTML page
+Add this to your HTML:
 
 ```html
 <script src="http://localhost:8800/script.js"></script>
