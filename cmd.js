@@ -15,8 +15,10 @@ var watcher = fsevents(process.cwd())
 
 wss.on('connection', function(ws) {
   watcher.on('change', function(path, info) {
-    try { ws.send('trigger_reload') }
-    catch (e) { }
+    setTimeout(function() {
+      try { ws.send('trigger_reload', null) }
+      catch(e) {}
+    }, 500)
   })
 })
 
