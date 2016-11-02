@@ -1,6 +1,6 @@
 # Shift F5
 
-Live reload minus the hot swapping
+Live reload minus the hot swapping.
 
 ### Setup
 
