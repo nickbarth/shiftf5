@@ -1,0 +1,20 @@
+{
+  "name": "shiftf5",
+  "version": "1.0.3",
+  "description": "Live reload minus the hot swapping.",
+  "main": "cmd.js",
+  "bin": {
+    "shiftf5": "cmd.js"
+  },
+  "dependencies": {
+    "fsevents": "^1.0.14",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nick Barth",
+  "repository": "https://github.com/nickbarth/shiftf5",
+  "license": "WTFPL"
+}
