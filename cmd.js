@@ -13,7 +13,7 @@ var server = http.createServer(function(request,response){
 var wss = new WServer.Server({ server: server })
 var watcher = fsevents(process.cwd())
 
-wss.on('connection', function connection(ws) {
+wss.on('connection', function(ws) {
   watcher.on('change', function(path, info) {
     try { ws.send('trigger_reload') }
     catch (e) { }
